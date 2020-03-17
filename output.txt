@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" dataCompatibilityVersion="2" majorVersion="1" minorVersion="0">
+  <Routing majorVersion="2" minorVersion="0">
+    <Algorithm>
+      <GeographicRestrictions>
+        <ForbiddenCountry countryCode="32" />
+      </GeographicRestrictions>
+    </Algorithm>
+  </Routing>
+</Profile>
+Withouth "block belgium" snippet the distance is 247796. It goes through 31,32,33
+Withouth "block belgium" snippet the distance is 834056. It goes through 31,49,52,33
+
+<?xml version="1.0" encoding="utf-8"?>
+<Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" dataCompatibilityVersion="2" majorVersion="1" minorVersion="0">
+  <Routing majorVersion="2" minorVersion="0">
+    <Vehicle>
+      <Physical>
+        <Drive driveType="MOTORIZED">
+          <Emissions emissionClass="EURO_6" />
+          <Engine bioFuelRatio="0" fuelConsumption="32.6" fuelType="DIESEL" />
+        </Drive>
+      </Physical>
+    </Vehicle>
+  </Routing>
+</Profile>
+Emmisison distance 749130. Fleet based co2eTank2Wheel = 651,9750447. HBEFA based co2eTank2Wheel = 761,509391033156. Pure HBEFA carbonDioxide = 754,368095748751
+
+<?xml version="1.0" encoding="utf-8"?>
+<Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" dataCompatibilityVersion="2" majorVersion="1" minorVersion="0">
+  <Routing majorVersion="2" minorVersion="0">
+    <Course>
+      <AdditionalDataRules enabled="true" />
+    </Course>
+    <Vehicle>
+      <Load hazardousGoodsType="HAZARDOUS" loadType="GOODS" tunnelRestrictionCode="E" />
+    </Vehicle>
+  </Routing>
+  <FeatureLayer majorVersion="1" minorVersion="0">
+    <GlobalSettings enableVehicleDependency="true" />
+    <Themes>
+      <Theme enabled="true" id="PTV_TruckAttributes" />
+    </Themes>
+  </FeatureLayer>
+</Profile>
+With tunnel code E the distance is 16877.
+With tunnel code D the distance is 16877.
+With tunnel code C the distance is 16877.
+With tunnel code B the distance is 16877.
+With tunnel code NONE the distance is 16877.
